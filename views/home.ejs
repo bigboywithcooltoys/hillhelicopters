@@ -84,28 +84,28 @@
                     <h3 class="d-3-1-h3">Choose your paint</h3>
                     <div class="d-3-1-m">
                         <div class="d-3-1-m-i">
-                            <img src="./images/outside_1_1.png" alt="helicopter image">
+                            <img class="d-3-1-m-i-i" id="paint-img" src="./images/outside_1_1.png" alt="helicopter image">
                         </div>
                         <div class="d-3-1-m-c">
-                            <button class="d-3-1-m-c-button" id="ext-1">
+                            <button class="d-3-1-m-c-div" onclick="changePaint(id)" id="ext-1">
                                 <div class="d-3-1-m-c-1"></div>&nbsp;<p>Supermarine white</p>
                             </button>
-                            <button class="d-3-1-m-c-button" id="ext-2">
+                            <button class="d-3-1-m-c-div" onclick="changePaint(id)" id="ext-2">
                                 <div class="d-3-1-m-c-2"></div>&nbsp;<p>Endeavour Red</p>
                             </button>
-                            <button class="d-3-1-m-c-button" id="ext-3">
+                            <button class="d-3-1-m-c-div" onclick="changePaint(id)" id="ext-3">
                                 <div class="d-3-1-m-c-3"></div>&nbsp;<p>Forged Orange</p>
                             </button>
-                            <button class="d-3-1-m-c-button" id="ext-4">
+                            <button class="d-3-1-m-c-div" onclick="changePaint(id)" id="ext-4">
                                 <div class="d-3-1-m-c-4"></div>&nbsp;<p>British Racing Green</p>
                             </button>
-                            <button class="d-3-1-m-c-button" id="ext-5">
+                            <button class="d-3-1-m-c-div" onclick="changePaint(id)" id="ext-5">
                                 <div class="d-3-1-m-c-5"></div>&nbsp;<p>Royal Blue</p>
                             </button>
-                            <button class="d-3-1-m-c-button" id="ext-6">
+                            <button class="d-3-1-m-c-div" onclick="changePaint(id)" id="ext-6">
                                 <div class="d-3-1-m-c-6"></div>&nbsp;<p>Mercury</p>
                             </button>
-                            <button class="d-3-1-m-c-button" id="ext-7">
+                            <button class="d-3-1-m-c-div" onclick="changePaint(id)"  id="ext-7">
                                 <div class="d-3-1-m-c-7"></div>&nbsp;<p>Graphite</p>
                             </button>
                         </div>
@@ -115,35 +115,35 @@
                 <div class="d-3-2">
                     <div class="d-3-2-i">
                         <div class="d-3-2-i-i">
-                            <img src="./images/interior_1_1.jpg" alt="helicopter interior main image">
+                            <img id="int-img-main" src="./images/interior_1_1.jpg" alt="helicopter interior main image">
                         </div>
                         <div class="d-3-2-i-o">
                             <div class="d-3-2-i-o-e">
-                                <img id="int-img-1" src="./images/interior_1_1.jpg" alt="helicopter interior selection image">
+                                <img id="int-img-1" onclick="changeInt(src)" src="./images/interior_1_1.jpg" alt="helicopter interior selection image">
                             </div>
                             <div class="d-3-2-i-o-e">
-                                <img id="int-img-2" src="./images/interior_1_2.jpg" alt="helicopter interior selection image">
+                                <img id="int-img-2" onclick="changeInt(src)" src="./images/interior_1_2.jpg" alt="helicopter interior selection image">
                             </div>
                             <div class="d-3-2-i-o-e">
-                                <img id="int-img-3" src="./images/interior_1_3.jpg" alt="helicopter interior selection image">
+                                <img id="int-img-3" onclick="changeInt(src)" src="./images/interior_1_3.jpg" alt="helicopter interior selection image">
                             </div>
                         </div>
                     </div>
                     <div class="d-3-2-m">
                         <h3>Choose your interior</h3>
                         <p>Sophisticated, subtle, opulent: luxury leather seats combined with your choice of fine wood finishes.</p>
-                        <p>Color: Sky white</p>
+                        <p id="color-name">Color: Sky white</p>
                         <div class="d-3-2-m-c">
-                            <div id="int-color-1" class="d-3-2-m-c-1"></div>
-                            <div id="int-color-2" class="d-3-2-m-c-2"></div>
-                            <div id="int-color-3" class="d-3-2-m-c-3"></div>
-                            <div id="int-color-4" class="d-3-2-m-c-4"></div>
-                            <div id="int-color-5" class="d-3-2-m-c-5"></div>
-                            <div id="int-color-6" class="d-3-2-m-c-6"></div>
-                            <div id="int-color-7" class="d-3-2-m-c-7"></div>
-                            <div id="int-color-8" class="d-3-2-m-c-8"></div>
-                            <div id="int-color-9" class="d-3-2-m-c-9"></div>
-                            <div id="int-color-10" class="d-3-2-m-c-10"></div>
+                            <div id="int-color-1" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-1"></div>
+                            <div id="int-color-2" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-2"></div>
+                            <div id="int-color-3" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-3"></div>
+                            <div id="int-color-4" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-4"></div>
+                            <div id="int-color-5" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-5"></div>
+                            <div id="int-color-6" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-6"></div>
+                            <div id="int-color-7" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-7"></div>
+                            <div id="int-color-8" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-8"></div>
+                            <div id="int-color-9" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-9"></div>
+                            <div id="int-color-10" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-10"></div>
                         </div>
                     </div>
                 </div>
@@ -207,12 +207,12 @@
             <div class="d-6">
                 <h1>DIMENSIONS</h1>
                 <ul class="d-6-ul">
-                    <li id="dim-side">SIDE</li>
-                    <li id="dim-a">TOP A</li>
-                    <li id="dim-b">TOP B</li>
-                    <li id="dim-c">TOP C</li>
-                    <li id="dim-front">FRONT</li>
-                    <li id="dim-luggage">LUGGAGE</li>
+                    <li onclick="changeDimmension(id)" id="dimmension-side">SIDE</li>
+                    <li onclick="changeDimmension(id)" id="dimmension-A">TOP A</li>
+                    <li onclick="changeDimmension(id)" id="dimmension-B">TOP B</li>
+                    <li onclick="changeDimmension(id)" id="dimmension-C">TOP C</li>
+                    <li onclick="changeDimmension(id)" id="dimmension-front">FRONT</li>
+                    <li onclick="changeDimmension(id)" id="dimmension-luggage">LUGGAGE</li>
                 </ul>
                 <div class="d-6-m">
                     <div class="d-6-m-d">
@@ -245,7 +245,7 @@
                         </div>
                     </div>
                     <div class="d-6-m-i">
-                        <img src="./images/dimmension-side.png" alt="sketch of helicopter dimension">
+                        <img id="dim-img" src="./images/dimmension-side.png" alt="sketch of helicopter dimension">
                     </div>
                 </div>
             </div>

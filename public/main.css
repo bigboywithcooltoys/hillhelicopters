@@ -211,7 +211,7 @@ main {
 .d-3-1-m-i {
     width: 100%;
 }
-.d-3-1-m-i > img {
+.d-3-1-m-i-i {
     width: 100%;
     margin: 20px 20px;
 }
@@ -219,7 +219,7 @@ main {
     width: 100%;
     max-width: 250px;
 }
-.d-3-1-m-c-button {
+.d-3-1-m-c-div {
     border: none;
     width: 100%;
     height: 52px;
@@ -229,12 +229,16 @@ main {
     justify-content: flex-start;
     align-items: center;
 }
+.d-3-1-m-c-div:hover  {
+    text-decoration: underline;
+}
 .d-3-1-m-c-1 {
     display: inline;
     width: 20px;
     height: 20px;
     background-color: #F2F3FF;
     border-radius: 50%;
+    padding: 10px;
 }
 .d-3-1-m-c-2 {
     display: inline;
