@@ -149,5 +149,33 @@ colors.forEach(ele => {
 
 function changeDimmension(id) {
     document.getElementById("dim-img").src = "./images/" + id + ".png"
+    let prev = document.getElementsByClassName("dim-act")[0]
+    prev.classList.add("dim-int")
+    prev.classList.remove("dim-act")
+    if (id == "dimmension-side") {
+        let cur = document.getElementById("d-6-m-d-id-side")
+        cur.classList.add("dim-act")
+        cur.classList.remove("dim-int")
+    } else if (id == "dimmension-A") {
+        let cur = document.getElementById("d-6-m-d-id-a")
+        cur.classList.add("dim-act")
+        cur.classList.remove("dim-int")
+    } else if (id == "dimmension-B") {
+        let cur = document.getElementById("d-6-m-d-id-b")
+        cur.classList.add("dim-act")
+        cur.classList.remove("dim-int")
+    } else if (id == "dimmension-C") {
+        let cur = document.getElementById("d-6-m-d-id-c")
+        cur.classList.add("dim-act")
+        cur.classList.remove("dim-int")
+    } else if (id == "dimmension-front") {
+        let cur = document.getElementById("d-6-m-d-id-front")
+        cur.classList.add("dim-act")
+        cur.classList.remove("dim-int")
+    } else if (id == "dimmension-luggage") {
+        let cur = document.getElementById("d-6-m-d-id-luggage")
+        cur.classList.add("dim-act")
+        cur.classList.remove("dim-int")
+    }
 }
 

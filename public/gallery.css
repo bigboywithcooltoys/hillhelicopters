@@ -1,0 +1,258 @@
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #000000; /* 2 */
+}
+
+
+html, body, div, span, applet, object, iframe, blockquote, pre, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a, p {
+    font-size: 18px;
+}
+h1 {
+    margin: 0;
+	padding: 0;
+    font-size: 36px;
+}
+h2 {
+    margin: 0;
+	padding: 0;
+    font-size: 32px;
+}
+h3 {
+    margin: 0;
+	padding: 0;
+    font-size: 28px;
+}
+h4 {
+    margin: 0;
+	padding: 0;
+    font-size: 24px;
+}
+h5, h6 {
+    margin: 0;
+	padding: 0;
+    font-size: 20px;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    font-family: "Poppins", Helvetica, Arial, sans-serif ;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 96px;
+    padding: 0 140px;
+    margin: 0 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.h-m {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+}
+.h-m > a {
+    text-decoration: none;
+    color: White;
+    font-size: 24px;
+    font-weight: 500;
+}
+#active {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+
+
+main {
+    padding: 0;
+    margin: 100px 0;
+}
+
+
+
+
+.g-1 {
+    padding: 0;
+    margin: 0 0 100px 0;
+    background-color: rgb(136, 106, 76);
+    height: 250px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    /* position: relative; */
+}
+.g-1-active {
+    padding: 0 140px;
+    margin: 0 0 50px 0;
+    background-color: transparent;
+    aspect-ratio: 16 / 8;
+    height: auto;
+    display: block;
+}
+.g-1-active > h1 {
+    visibility: hidden;
+    user-select: none;
+    position: absolute;
+}
+
+.g-1-m {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    position: absolute;
+    user-select: none;
+}
+.g-1-m-active {
+    visibility: visible;
+    position: relative;
+    user-select: auto;
+}
+.g-1-m-i {
+    width: 100%;
+    padding: 0 0;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    display: grid;
+    place-content: center;
+    position: relative;
+}
+.g-1-m-i > iframe {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+}
+.g-1-m-t {
+    height: 48px;
+    width: 100%;
+}
+
+
+
+.g-2 {
+    padding: 0 140px;
+    margin: 100px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 390px));
+    grid-auto-rows: 300px;
+    gap: 50px;
+    place-content: center;
+}
+
+.g-2-card {
+    width: 100%;
+    aspect-ratio: 100 / 77;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.g-2-c-cover {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.g-2-c-i {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+.g-2-c-i > img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+.g-2-c-t {
+    width: 100%;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    margin: 0 140px;
+    padding: 0 0 100px 0;
+}
