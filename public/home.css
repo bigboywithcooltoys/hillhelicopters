@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 a, p {
     font-size: 18px;
+    color: white;
 }
 h1 {
     margin: 0;
@@ -79,10 +80,15 @@ table {
 }
 
 
+
+
+
+
+
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #121212;
+    background-color: #0F1115;
     color: white;
     font-family: "Poppins", Helvetica, Arial, sans-serif ;
 }
@@ -91,35 +97,61 @@ body {
 
 
 
+
+
+
+
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     width: 100%;
-    height: 96px;
-    padding: 0 140px;
-    margin: 0 0;
-    background-color: transparent;
+    padding: 0;
+    margin: 0;
     position: absolute;
     top: 0;
     left: 0;
 
 }
+.h-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: clamp(320px, 80%, 1160px);
+    height: 96px;
+    padding: 0;
+    margin: 0 auto;
+}
+.h-i {
+    width: 200px;
+}
+.h-i-img {
+    width: 100%;
+}
 .h-m {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 250px;
+    width: 350px;
 }
 .h-m > a {
     text-decoration: none;
     color: White;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 500;
+}
+.h-m > a:hover {
+    color: #11DD72;
 }
 #active {
     font-weight: 500;
     text-decoration: underline;
+    text-underline-offset: 5px;
+}
+#h-contact {
+    background-color: #11DD72;
+    border-radius: 3px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 10px;
 }
 
 
@@ -130,39 +162,67 @@ header {
 main {
     padding: 0 0;
     margin: 0 0;
+    width: 100%;
 }
 
 
-
-
-
-
-
-.d-1 {
+.d-1-cont {
     width: 100%;
     height: 800px;
-    padding: 200px 140px 0 140px;
+    padding: 200px 0 0 0;
     margin: 0 0;
     background-image: url("./images/background1.jpg");
-    background-position: 100% 100%;
+    background-position: center;
     background-size: cover;
+}
+.d-1 {
+    width: clamp(320px, 80%, 1160px);
+    margin: 0 auto;
 }
 .d-1-main {
     width: 500px;
     margin-bottom: 100px;
 }
+.d-1-main > h1 {
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+.d-1-main > a {
+    margin: 100px 0 0 0;
+    color: #11DD72;
+    text-decoration: none;
+}
+.d-1-main > a:hover {
+    text-decoration: underline;
+}
+.d-1-main-small {
+    color: #0fb960;
+    margin: 10px 0;
+}
+.d-1-main-small-1 {
+    margin-top: 30px;
+}
 .d-1-stat {
-    width: 600px;
+    width: 700px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
 .d-1-stat-e {
-    width: 120px;
+    width: 140px;
     height: 80px;
+    margin-top: 150px;
+}
+.d-1-stat-e > h5 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
 }
 .d-1-stat-e > p {
-    font-size: 16px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 
@@ -401,9 +461,7 @@ main {
 
 }
 .d-4-m-b {
-    border: none;
-    border-radius: 30px;
-    background-color: white;
+    color: rgb(138, 204, 39);
     height: 60px;
     width: 250px;
     padding: 10px 10px;
@@ -525,18 +583,45 @@ main {
 
 
 
-
-.d-7 {
-    margin: 0 140px 100px 140px;
-}
-
-
-
-
-
 footer {
     margin: 0 140px;
     padding: 0 0 100px 0;
 }
 
 
+
+
+
+
+@media (max-width: 800px) {
+    .h-cont {
+        width: 90%;
+    }
+    .h-i {
+        width: 150px;
+    }
+    .h-m {
+        width: 300px;
+    }
+    .h-m > a {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .h-i {
+        width: 40px;
+    }
+    .h-i-img {
+        content: url("./images/hill-logo-small.png");
+    }
+    .h-m {
+        width: 280px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    
+}

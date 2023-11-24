@@ -1,6 +1,7 @@
 module.exports = {
     home,
-    gallery
+    gallery,
+    contact
 }
 
 function home(req, res) {
@@ -10,4 +11,9 @@ function home(req, res) {
 
 function gallery(req, res) {
     res.render('gallery')
+}
+
+
+function contact(req, res) {
+    res.render('contact')
 }
