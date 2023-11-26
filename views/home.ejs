@@ -233,199 +233,225 @@
                 </div>
             </div>
 
-            <div class="d-6">
-                <h1>DIMENSIONS</h1>
-                <ul class="d-6-ul">
-                    <li onclick="changeDimmension(id)" id="dimmension-side">SIDE</li>
-                    <li onclick="changeDimmension(id)" id="dimmension-A">TOP A</li>
-                    <li onclick="changeDimmension(id)" id="dimmension-B">TOP B</li>
-                    <li onclick="changeDimmension(id)" id="dimmension-C">TOP C</li>
-                    <li onclick="changeDimmension(id)" id="dimmension-front">FRONT</li>
-                    <li onclick="changeDimmension(id)" id="dimmension-luggage">LUGGAGE</li>
-                </ul>
-                <div class="d-6-m">
-                    <div class="d-6-m-dim">
-                        <div class="d-6-m-d d-6-m-d-side dim-act" id="d-6-m-d-id-side">
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>A</span>&nbsp;<span>Length</span></p>
+            <div class="d-6-cont">
+                <div class="d-6">
+                    <h1>DIMENSIONS</h1>
+                    <ul class="d-6-ul">
+                        <li onclick="changeDimmension(id)" id="dimmension-side" class="d-6-active">SIDE</li>
+                        <li onclick="changeDimmension(id)" id="dimmension-A">TOP A</li>
+                        <li onclick="changeDimmension(id)" id="dimmension-B">TOP B</li>
+                        <li onclick="changeDimmension(id)" id="dimmension-C">TOP C</li>
+                        <li onclick="changeDimmension(id)" id="dimmension-front">FRONT</li>
+                        <li onclick="changeDimmension(id)" id="dimmension-luggage">LUGGAGE</li>
+                    </ul>
+                    <div class="d-6-m">
+                        <div class="d-6-m-dim">
+                            <div class="d-6-m-d d-6-m-d-side dim-act" id="d-6-m-d-id-side">
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.3382 19.808H11.6662L10.5622 23H7.03416L13.0582 6.224H16.9702L22.9942 23H19.4422L18.3382 19.808ZM17.4262 17.12L15.0022 10.112L12.5782 17.12H17.4262Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Length</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>463.4"</p>
+                                        <p>11,770 mm</p>
+                                    </div>
                                 </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>463.4"</p>
-                                    <p>11,770 mm</p>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.4491 14.408C19.3931 14.584 20.1691 15.056 20.7771 15.824C21.3851 16.592 21.6891 17.472 21.6891 18.464C21.6891 19.36 21.4651 20.152 21.0171 20.84C20.5851 21.512 19.9531 22.04 19.1211 22.424C18.2891 22.808 17.3051 23 16.1691 23H8.94506V6.248H15.8571C16.9931 6.248 17.9691 6.432 18.7851 6.8C19.6171 7.168 20.2411 7.68 20.6571 8.336C21.0891 8.992 21.3051 9.736 21.3051 10.568C21.3051 11.544 21.0411 12.36 20.5131 13.016C20.0011 13.672 19.3131 14.136 18.4491 14.408ZM12.3051 13.16H15.3771C16.1771 13.16 16.7931 12.984 17.2251 12.632C17.6571 12.264 17.8731 11.744 17.8731 11.072C17.8731 10.4 17.6571 9.88 17.2251 9.512C16.7931 9.144 16.1771 8.96 15.3771 8.96H12.3051V13.16ZM15.6891 20.264C16.5051 20.264 17.1371 20.072 17.5851 19.688C18.0491 19.304 18.2811 18.76 18.2811 18.056C18.2811 17.336 18.0411 16.776 17.5611 16.376C17.0811 15.96 16.4331 15.752 15.6171 15.752H12.3051V20.264H15.6891Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Body Length</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>386.6"</p>
+                                        <p>9,820 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M6.62906 14.6C6.62906 12.952 6.99706 11.48 7.73306 10.184C8.48506 8.872 9.50106 7.856 10.7811 7.136C12.0771 6.4 13.5251 6.032 15.1251 6.032C16.9971 6.032 18.6371 6.512 20.0451 7.472C21.4531 8.432 22.4371 9.76 22.9971 11.456H19.1331C18.7491 10.656 18.2051 10.056 17.5011 9.656C16.8131 9.256 16.0131 9.056 15.1011 9.056C14.1251 9.056 13.2531 9.288 12.4851 9.752C11.7331 10.2 11.1411 10.84 10.7091 11.672C10.2931 12.504 10.0851 13.48 10.0851 14.6C10.0851 15.704 10.2931 16.68 10.7091 17.528C11.1411 18.36 11.7331 19.008 12.4851 19.472C13.2531 19.92 14.1251 20.144 15.1011 20.144C16.0131 20.144 16.8131 19.944 17.5011 19.544C18.2051 19.128 18.7491 18.52 19.1331 17.72H22.9971C22.4371 19.432 21.4531 20.768 20.0451 21.728C18.6531 22.672 17.0131 23.144 15.1251 23.144C13.5251 23.144 12.0771 22.784 10.7811 22.064C9.50106 21.328 8.48506 20.312 7.73306 19.016C6.99706 17.72 6.62906 16.248 6.62906 14.6Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Height</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>129.5"</p>
+                                        <p>3,290 mm</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>B</span>&nbsp;<span>Body Length</span></p>
+                            <div class="d-6-m-d d-6-m-d-topa dim-int" id="d-6-m-d-id-a">
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.3382 19.808H11.6662L10.5622 23H7.03416L13.0582 6.224H16.9702L22.9942 23H19.4422L18.3382 19.808ZM17.4262 17.12L15.0022 10.112L12.5782 17.12H17.4262Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Width</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>342.5"</p>
+                                        <p>8,700 mm</p>
+                                    </div>
                                 </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>386.6"</p>
-                                    <p>9,820 mm</p>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.4491 14.408C19.3931 14.584 20.1691 15.056 20.7771 15.824C21.3851 16.592 21.6891 17.472 21.6891 18.464C21.6891 19.36 21.4651 20.152 21.0171 20.84C20.5851 21.512 19.9531 22.04 19.1211 22.424C18.2891 22.808 17.3051 23 16.1691 23H8.94506V6.248H15.8571C16.9931 6.248 17.9691 6.432 18.7851 6.8C19.6171 7.168 20.2411 7.68 20.6571 8.336C21.0891 8.992 21.3051 9.736 21.3051 10.568C21.3051 11.544 21.0411 12.36 20.5131 13.016C20.0011 13.672 19.3131 14.136 18.4491 14.408ZM12.3051 13.16H15.3771C16.1771 13.16 16.7931 12.984 17.2251 12.632C17.6571 12.264 17.8731 11.744 17.8731 11.072C17.8731 10.4 17.6571 9.88 17.2251 9.512C16.7931 9.144 16.1771 8.96 15.3771 8.96H12.3051V13.16ZM15.6891 20.264C16.5051 20.264 17.1371 20.072 17.5851 19.688C18.0491 19.304 18.2811 18.76 18.2811 18.056C18.2811 17.336 18.0411 16.776 17.5611 16.376C17.0811 15.96 16.4331 15.752 15.6171 15.752H12.3051V20.264H15.6891Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Length</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>463.4"</p>
+                                        <p>11,770 mm</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>C</span>&nbsp;<span>Height</span></p>
+                            <div class="d-6-m-d d-6-m-d-topb dim-int" id="d-6-m-d-id-b">
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.3382 19.808H11.6662L10.5622 23H7.03416L13.0582 6.224H16.9702L22.9942 23H19.4422L18.3382 19.808ZM17.4262 17.12L15.0022 10.112L12.5782 17.12H17.4262Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Width</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>342.5"</p>
+                                        <p>8,700 mm</p>
+                                    </div>
                                 </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>129.5"</p>
-                                    <p>3,290 mm</p>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.4491 14.408C19.3931 14.584 20.1691 15.056 20.7771 15.824C21.3851 16.592 21.6891 17.472 21.6891 18.464C21.6891 19.36 21.4651 20.152 21.0171 20.84C20.5851 21.512 19.9531 22.04 19.1211 22.424C18.2891 22.808 17.3051 23 16.1691 23H8.94506V6.248H15.8571C16.9931 6.248 17.9691 6.432 18.7851 6.8C19.6171 7.168 20.2411 7.68 20.6571 8.336C21.0891 8.992 21.3051 9.736 21.3051 10.568C21.3051 11.544 21.0411 12.36 20.5131 13.016C20.0011 13.672 19.3131 14.136 18.4491 14.408ZM12.3051 13.16H15.3771C16.1771 13.16 16.7931 12.984 17.2251 12.632C17.6571 12.264 17.8731 11.744 17.8731 11.072C17.8731 10.4 17.6571 9.88 17.2251 9.512C16.7931 9.144 16.1771 8.96 15.3771 8.96H12.3051V13.16ZM15.6891 20.264C16.5051 20.264 17.1371 20.072 17.5851 19.688C18.0491 19.304 18.2811 18.76 18.2811 18.056C18.2811 17.336 18.0411 16.776 17.5611 16.376C17.0811 15.96 16.4331 15.752 15.6171 15.752H12.3051V20.264H15.6891Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Length</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>386.6"</p>
+                                        <p>9,820 mm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-6-m-d d-6-m-d-topc dim-int" id="d-6-m-d-id-c">
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.3382 19.808H11.6662L10.5622 23H7.03416L13.0582 6.224H16.9702L22.9942 23H19.4422L18.3382 19.808ZM17.4262 17.12L15.0022 10.112L12.5782 17.12H17.4262Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Body Width</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>102.4"</p>
+                                        <p>2,600 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.4491 14.408C19.3931 14.584 20.1691 15.056 20.7771 15.824C21.3851 16.592 21.6891 17.472 21.6891 18.464C21.6891 19.36 21.4651 20.152 21.0171 20.84C20.5851 21.512 19.9531 22.04 19.1211 22.424C18.2891 22.808 17.3051 23 16.1691 23H8.94506V6.248H15.8571C16.9931 6.248 17.9691 6.432 18.7851 6.8C19.6171 7.168 20.2411 7.68 20.6571 8.336C21.0891 8.992 21.3051 9.736 21.3051 10.568C21.3051 11.544 21.0411 12.36 20.5131 13.016C20.0011 13.672 19.3131 14.136 18.4491 14.408ZM12.3051 13.16H15.3771C16.1771 13.16 16.7931 12.984 17.2251 12.632C17.6571 12.264 17.8731 11.744 17.8731 11.072C17.8731 10.4 17.6571 9.88 17.2251 9.512C16.7931 9.144 16.1771 8.96 15.3771 8.96H12.3051V13.16ZM15.6891 20.264C16.5051 20.264 17.1371 20.072 17.5851 19.688C18.0491 19.304 18.2811 18.76 18.2811 18.056C18.2811 17.336 18.0411 16.776 17.5611 16.376C17.0811 15.96 16.4331 15.752 15.6171 15.752H12.3051V20.264H15.6891Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Body Length</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>386.6"</p>
+                                        <p>9,820 mm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-6-m-d d-6-m-d-front dim-int" id="d-6-m-d-id-front">
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.3382 19.808H11.6662L10.5622 23H7.03416L13.0582 6.224H16.9702L22.9942 23H19.4422L18.3382 19.808ZM17.4262 17.12L15.0022 10.112L12.5782 17.12H17.4262Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Height</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>129.5"</p>
+                                        <p>3,290 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.4491 14.408C19.3931 14.584 20.1691 15.056 20.7771 15.824C21.3851 16.592 21.6891 17.472 21.6891 18.464C21.6891 19.36 21.4651 20.152 21.0171 20.84C20.5851 21.512 19.9531 22.04 19.1211 22.424C18.2891 22.808 17.3051 23 16.1691 23H8.94506V6.248H15.8571C16.9931 6.248 17.9691 6.432 18.7851 6.8C19.6171 7.168 20.2411 7.68 20.6571 8.336C21.0891 8.992 21.3051 9.736 21.3051 10.568C21.3051 11.544 21.0411 12.36 20.5131 13.016C20.0011 13.672 19.3131 14.136 18.4491 14.408ZM12.3051 13.16H15.3771C16.1771 13.16 16.7931 12.984 17.2251 12.632C17.6571 12.264 17.8731 11.744 17.8731 11.072C17.8731 10.4 17.6571 9.88 17.2251 9.512C16.7931 9.144 16.1771 8.96 15.3771 8.96H12.3051V13.16ZM15.6891 20.264C16.5051 20.264 17.1371 20.072 17.5851 19.688C18.0491 19.304 18.2811 18.76 18.2811 18.056C18.2811 17.336 18.0411 16.776 17.5611 16.376C17.0811 15.96 16.4331 15.752 15.6171 15.752H12.3051V20.264H15.6891Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Body Width</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>102.4"</p>
+                                        <p>2,600 mm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-6-m-d d-6-m-d-luggage dim-int" id="d-6-m-d-id-luggage">
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.3382 19.808H11.6662L10.5622 23H7.03416L13.0582 6.224H16.9702L22.9942 23H19.4422L18.3382 19.808ZM17.4262 17.12L15.0022 10.112L12.5782 17.12H17.4262Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Max Width</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>50.0"</p>
+                                        <p>1,270 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M18.4491 14.408C19.3931 14.584 20.1691 15.056 20.7771 15.824C21.3851 16.592 21.6891 17.472 21.6891 18.464C21.6891 19.36 21.4651 20.152 21.0171 20.84C20.5851 21.512 19.9531 22.04 19.1211 22.424C18.2891 22.808 17.3051 23 16.1691 23H8.94506V6.248H15.8571C16.9931 6.248 17.9691 6.432 18.7851 6.8C19.6171 7.168 20.2411 7.68 20.6571 8.336C21.0891 8.992 21.3051 9.736 21.3051 10.568C21.3051 11.544 21.0411 12.36 20.5131 13.016C20.0011 13.672 19.3131 14.136 18.4491 14.408ZM12.3051 13.16H15.3771C16.1771 13.16 16.7931 12.984 17.2251 12.632C17.6571 12.264 17.8731 11.744 17.8731 11.072C17.8731 10.4 17.6571 9.88 17.2251 9.512C16.7931 9.144 16.1771 8.96 15.3771 8.96H12.3051V13.16ZM15.6891 20.264C16.5051 20.264 17.1371 20.072 17.5851 19.688C18.0491 19.304 18.2811 18.76 18.2811 18.056C18.2811 17.336 18.0411 16.776 17.5611 16.376C17.0811 15.96 16.4331 15.752 15.6171 15.752H12.3051V20.264H15.6891Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Min Width</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>19.7"</p>
+                                        <p>500 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M6.62906 14.6C6.62906 12.952 6.99706 11.48 7.73306 10.184C8.48506 8.872 9.50106 7.856 10.7811 7.136C12.0771 6.4 13.5251 6.032 15.1251 6.032C16.9971 6.032 18.6371 6.512 20.0451 7.472C21.4531 8.432 22.4371 9.76 22.9971 11.456H19.1331C18.7491 10.656 18.2051 10.056 17.5011 9.656C16.8131 9.256 16.0131 9.056 15.1011 9.056C14.1251 9.056 13.2531 9.288 12.4851 9.752C11.7331 10.2 11.1411 10.84 10.7091 11.672C10.2931 12.504 10.0851 13.48 10.0851 14.6C10.0851 15.704 10.2931 16.68 10.7091 17.528C11.1411 18.36 11.7331 19.008 12.4851 19.472C13.2531 19.92 14.1251 20.144 15.1011 20.144C16.0131 20.144 16.8131 19.944 17.5011 19.544C18.2051 19.128 18.7491 18.52 19.1331 17.72H22.9971C22.4371 19.432 21.4531 20.768 20.0451 21.728C18.6531 22.672 17.0131 23.144 15.1251 23.144C13.5251 23.144 12.0771 22.784 10.7811 22.064C9.50106 21.328 8.48506 20.312 7.73306 19.016C6.99706 17.72 6.62906 16.248 6.62906 14.6Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Max Height</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>21.5"</p>
+                                        <p>545 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M14.9104 6.248C16.6704 6.248 18.2144 6.592 19.5424 7.28C20.8864 7.968 21.9184 8.952 22.6384 10.232C23.3744 11.496 23.7424 12.968 23.7424 14.648C23.7424 16.328 23.3744 17.8 22.6384 19.064C21.9184 20.312 20.8864 21.28 19.5424 21.968C18.2144 22.656 16.6704 23 14.9104 23H9.05444V6.248H14.9104ZM14.7904 20.144C16.5504 20.144 17.9104 19.664 18.8704 18.704C19.8304 17.744 20.3104 16.392 20.3104 14.648C20.3104 12.904 19.8304 11.544 18.8704 10.568C17.9104 9.576 16.5504 9.08 14.7904 9.08H12.4144V20.144H14.7904Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Length</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>63.8"</p>
+                                        <p>1,620 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M13.6293 8.96V13.16H19.2693V15.824H13.6293V20.264H19.9893V23H10.2693V6.224H19.9893V8.96H13.6293Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Min Height</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>14.4"</p>
+                                        <p>365 mm</p>
+                                    </div>
+                                </div>
+                                <div class="d-6-m-d-e">
+                                    <div class="d-6-m-d-e-1">
+                                        <svg class="d-6-m-d-e-1-svg" width="24" height="24" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="15" fill="#D9D9D9"/><path d="M20.6367 6.248V8.96H13.6527V13.256H19.0047V15.92H13.6527V23H10.2927V6.248H20.6367Z" fill="black"/></svg>
+                                        <p class="d-6-m-d-e-1-title">Total Volume</p>
+                                    </div>
+                                    <div class="d-6-m-d-e-2">
+                                        <p>24.7 ft<sup>3</sup></p>
+                                        <p>0.7 m<sup>3</sup></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-6-m-d d-6-m-d-topa dim-int" id="d-6-m-d-id-a">
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>A</span>&nbsp;<span>Width</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>342.5"</p>
-                                    <p>8,700 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>B</span>&nbsp;<span>Length</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>463.4"</p>
-                                    <p>11,770 mm</p>
-                                </div>
-                            </div>
+                        <div class="d-6-m-i">
+                            <img id="dim-img" src="./images/dimmension-side.png" alt="sketch of helicopter dimension">
                         </div>
-                        <div class="d-6-m-d d-6-m-d-topb dim-int" id="d-6-m-d-id-b">
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>A</span>&nbsp;<span>Width</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>342.5"</p>
-                                    <p>8,700 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>B</span>&nbsp;<span>Length</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>386.6"</p>
-                                    <p>9,820 mm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-6-m-d d-6-m-d-topc dim-int" id="d-6-m-d-id-c">
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>A</span>&nbsp;<span>Body Width</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>102.4"</p>
-                                    <p>2,600 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>B</span>&nbsp;<span>Body Length</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>386.6"</p>
-                                    <p>9,820 mm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-6-m-d d-6-m-d-front dim-int" id="d-6-m-d-id-front">
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>A</span>&nbsp;<span>Height</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>129.5"</p>
-                                    <p>3,290 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>B</span>&nbsp;<span>Body Width</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>102.4"</p>
-                                    <p>2,600 mm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-6-m-d d-6-m-d-luggage dim-int" id="d-6-m-d-id-luggage">
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>A</span>&nbsp;<span>Max Width</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>50.0"</p>
-                                    <p>1,270 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>B</span>&nbsp;<span>Min Width</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>19.7"</p>
-                                    <p>500 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>C</span>&nbsp;<span>Max Height</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>21.5"</p>
-                                    <p>545 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>D</span>&nbsp;<span>Length</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>63.8"</p>
-                                    <p>1,620 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>E</span>&nbsp;<span>Min Height</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>14.4"</p>
-                                    <p>365 mm</p>
-                                </div>
-                            </div>
-                            <div class="d-6-m-d-e">
-                                <div class="d-6-m-d-e-1">
-                                    <p><span>F</span>&nbsp;<span>Total Volume</span></p>
-                                </div>
-                                <div class="d-6-m-d-e-2">
-                                    <p>24.7 ft^3</p>
-                                    <p>0.7 m^3</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-6-m-i">
-                        <img id="dim-img" src="./images/dimmension-side.png" alt="sketch of helicopter dimension">
                     </div>
                 </div>
             </div>
         </main>
 
         <footer>
-            <h1>Jump to the front of the line for your hill HX50</h1>
-            <p>Offering HX50 hall number: 222, 223,224</p>
-            <p>Also available commercial HC50 hall number: 006</p>
-            <h3>Secure your place in production line!</h3>
-            <p>+1 (647) 321 - 1965</p>
-            <p>Alextheskipro@hotmail.com</p>
-            <a href="/contact">Get in touch -></a>
+            <div class="footer-cont">
+                <div class="f-1 f-1-hid">
+                    <h3>Jump to the front of the line</h3>
+                    <h3>for your hill HX50</h3>
+                    <p>Offering HX50 hall number: 222, 223,224</p>
+                    <p>Also available commercial HC50 hall number: 006</p>
+                </div>
+                <div class="f-1">
+                    <h3>Secure your place in production line!</h3>
+                    <p>+1 (647) 321 - 1965</p>
+                    <p>Alextheskipro@hotmail.com</p>
+                    <a href="/contact">Get in touch&nbsp;&#8680;</a>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
