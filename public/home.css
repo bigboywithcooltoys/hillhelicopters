@@ -51,17 +51,11 @@ h5, h6 {
 ol, ul {
     list-style: none;
 }
-
-
-
-
-
 html {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 }
-
 body {
     background-color: #0F1115;
     width: 100%;
@@ -71,12 +65,6 @@ body {
     line-height: 1;
     position: relative;
 }
-
-
-
-
-
-
 header {
     width: 100%;
     padding: 0;
@@ -128,24 +116,11 @@ header {
     font-weight: 600;
     padding: 5px 10px;
 }
-
-
-
-
-
-
 main {
     padding: 0 0;
     margin: 0 0;
     width: 100%;
 }
-
-
-
-
-
-
-
 .d-1-alt {
     display: none;
 }
@@ -367,62 +342,84 @@ main {
     padding: 10px;
     background-color: #353535;
 }
-
-
-
-
 .d-3-2 {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    grid-template-rows: 1fr;
-    grid-gap: 50px;
+    display: flex;
+    justify-content: space-between;
     width: clamp(300px, 80%, 1160px);
     margin: 0 auto 100px auto;
 }
 .d-3-2-i {
-    width: 100%;
-    max-width: 570px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
 }
 .d-3-2-i-i {
     width: 100%;
     margin-bottom: 20px;
 } 
-.d-3-2-i-i > img {
+#int-img-main {
     width: 100%;
     border-radius: 10px;
+    box-shadow: 0 0 10px #002a86;
 }
 .d-3-2-i-o {
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .d-3-2-i-o-e {
-    width: 175px;
-    height: 125px;
+    width: 32%;
+    aspect-ratio: 25 / 18;
     padding: 5px;
-    border: 1px white solid;
+    border: 2px #2d2d2d solid;
     border-radius: 5px;
+}
+.d-3-2-i-o-e:hover {
+    border: 2px #555555 solid;
 }
 .d-3-2-i-o-e > img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px #002a86;
 }
 .d-3-2-m {
-    width: 100%;
+    width: 48%;
+}
+.d-3-2-m > h3 {
+    letter-spacing: 1px;
+    margin: 5px 0 15px 0;
+}
+.d-3-2-m > p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+#color-name {
+    margin: 30px 0 0 0;
 }
 .d-3-2-m-c {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    width: clamp(320px, 100%, 420px);
+    margin: 20px 0 0 0;
 }
-.d-3-2-m-c > div {
-    width: 64px;
-    height: 64px;
-    margin: 10px;
+.d-3-2-m-c-each-cont {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px #2d2d2d solid;
+    border-radius: 5px;
+}
+.d-3-2-m-c-each-cont:hover {
+    border: 2px #555555 solid;
+
+}
+.d-3-2-m-c-each {
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
 }
 .d-3-2-m-c-1 {
     background-color: white;
@@ -454,9 +451,6 @@ main {
 .d-3-2-m-c-10 {
     background-color: black;
 }
-
-
-
 .d-3-3 {
     width: clamp(300px, 80%, 1160px);
     margin: 0 auto 100px auto;
@@ -495,12 +489,6 @@ main {
 .d-3-3-m-e > img {
     width: 100%;
 }
-
-
-
-
-
-
 .d-4-cont {
     width: 100%;
     margin: 20px 0;
@@ -553,11 +541,6 @@ main {
 .d-4-m-b:hover {
     border: 1px black solid;
 }
-
-
-
-
-
 .d-5 {
     margin: 0;
     width: 100%;
@@ -607,10 +590,6 @@ main {
 .d-5-2-i > img {
     width: 100%;
 }
-
-
-
-
 .d-6-cont {
     width: 100%;
     margin: 0;
@@ -722,11 +701,6 @@ main {
     position: absolute;
     user-select: none;
 }
-
-
-
-
-
 footer {
     background-color: rgb(15, 15, 15);
     width: 100%;
@@ -764,13 +738,6 @@ footer {
 .f-1 > a:hover {
     border: 1px black solid;
 }
-
-
-
-
-
-
-
 @media (max-width: 1200px) {
     .d-3-1-m {
         display: block;
@@ -823,8 +790,6 @@ footer {
         height: auto;
     }
 }
-
-
 @media (max-width: 1000px) {
     .d-4 {
         display: flex;
@@ -860,9 +825,25 @@ footer {
     .f-1 {
         width: 47%;
     }
+    .d-3-2-m {
+        width: 49%;
+    }
+    .d-3-2-m > p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    #color-name {
+        margin: 20px 0 0 0;
+    }
+    .d-3-2-m-c {
+        width: clamp(320px, 90%, 420px);
+        margin: 10px 0;
+    }
+    .d-3-2-m-c-each-cont {
+        width: 45px;
+        height: 45px;
+    }
 }
-
-
 @media (max-width: 800px) {
     .h-cont {
         width: 90%;
@@ -965,6 +946,7 @@ footer {
     .footer-cont {
         display: flex;
         flex-direction: column-reverse;
+        padding: 50px 0;
     }
     .f-1 {
         width: 100%;
@@ -978,9 +960,32 @@ footer {
     .f-1-hid > p:last-of-type {
         margin: 18px 0 0 0;
     }
+    .d-3-2 {
+        display: flex;
+        flex-direction: column-reverse;
+        width: clamp(300px, 90%, 1160px);
+    }
+    .d-3-2-i {
+        width: clamp(300px, 80%, 1160px);
+        margin: 0 auto;
+    }
+    .d-3-2-i-i {
+        margin-bottom: 15px;
+    } 
+    .d-3-2-m {
+        width: 100%;
+    }
+    #color-name {
+        margin: 20px 0 0 0;
+    }
+    .d-3-2-m-c {
+        margin: 10px 0 20px 0;
+    }
+    .d-3-2-m-c-each-cont {
+        width: 60px;
+        height: 60px;
+    }
 }
-
-
 @media (max-width: 600px) {
     .h-i {
         width: 40px;
@@ -1051,9 +1056,26 @@ footer {
     .d-5-2-m > h3 {
         font-size: 20px;
     }
+    .d-3-2-i {
+        width: clamp(300px, 90%, 1160px);
+    }
+    .d-3-2-i-i {
+        margin-bottom: 15px;
+    } 
+    .d-3-2-m {
+        width: 100%;
+    }
+    #color-name {
+        margin: 20px 0 0 0;
+    }
+    .d-3-2-m-c {
+        margin: 10px 0 20px 0;
+    }
+    .d-3-2-m-c-each-cont {
+        width: 50px;
+        height: 50px;
+    }
 }
-
-
 @media (max-width: 430px) {
-    
+
 }
