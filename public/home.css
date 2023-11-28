@@ -77,7 +77,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: clamp(320px, 80%, 1160px);
+    width: clamp(300px, 80%, 1160px);
     height: 96px;
     padding: 0;
     margin: 0 auto;
@@ -137,7 +137,7 @@ main {
     background-size: cover;
 }
 .d-1 {
-    width: clamp(320px, 80%, 1160px);
+    width: clamp(300px, 80%, 1160px);
     margin: 0 auto;
     height: 100%;
     display: flex;
@@ -204,7 +204,7 @@ main {
 }
 .d-2-cont {
     width: 100%;
-    background: linear-gradient(180deg, rgba(100,116,139,1) 0%, rgba(222,229,232,1) 100%);
+    background: linear-gradient(180deg, rgb(121, 137, 161) 0%, rgb(177, 212, 227) 100%);
 }
 .d-2 {
     margin: 0 auto;
@@ -277,7 +277,13 @@ main {
     justify-content: flex-start;
     align-items: center;
 }
-#d-3-1-m-c-div-active {
+.d-3-1-m-c-div:hover  {
+    border: 2px #5d5d5d solid;
+}
+.d-3-1-m-c-div-active {
+    border: 2px #0D9F53 solid;
+}
+.d-3-1-m-c-div-active:hover {
     border: 2px #0D9F53 solid;
 }
 .d-3-1-m-c-div > p {
@@ -285,9 +291,6 @@ main {
     letter-spacing: 1px;
     line-height: 1.2;
     text-align: left;
-}
-.d-3-1-m-c-div:hover  {
-    border: 2px #4e4e4e solid;
 }
 .d-3-1-m-c-1 {
     display: inline;
@@ -380,7 +383,13 @@ main {
     border-radius: 5px;
 }
 .d-3-2-i-o-e:hover {
-    border: 2px #555555 solid;
+    border: 2px #656565 solid;
+}
+.d-3-2-i-o-e-active {
+    border: 2px #0D9F53 solid;
+}
+.d-3-2-i-o-e-active:hover {
+    border: 2px #0D9F53 solid;
 }
 .d-3-2-i-o-e > img {
     width: 100%;
@@ -405,7 +414,7 @@ main {
 .d-3-2-m-c {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(5, 1fr);
-    width: clamp(320px, 100%, 420px);
+    width: clamp(300px, 100%, 420px);
     margin: 20px 0 0 0;
 }
 .d-3-2-m-c-each-cont {
@@ -417,7 +426,14 @@ main {
     border-radius: 5px;
 }
 .d-3-2-m-c-each-cont:hover {
-    border: 2px #555555 solid;
+    border: 2px #6e6e6e solid;
+
+}
+.d-3-2-m-c-each-cont-active {
+    border: 2px #0D9F53 solid;
+}
+.d-3-2-m-c-each-cont-active:hover {
+    border: 2px #0D9F53 solid;
 
 }
 .d-3-2-m-c-each {
@@ -498,7 +514,7 @@ main {
     width: 100%;
     margin: 20px 0;
     padding: 100px 0;
-    background: linear-gradient(180deg, rgba(100,116,139,1) 0%, rgba(222,229,232,1) 100%);
+    background: linear-gradient(180deg, rgb(121, 137, 161) 0%, rgb(177, 212, 227) 100%);
 }
 .d-4 {
     width: clamp(300px, 80%, 1160px);
@@ -555,7 +571,7 @@ main {
     margin: 100px 0 0 0;
 }
 .d-5-1 {
-    width: clamp(320px, 95%, 1440px);
+    width: clamp(300px, 95%, 1440px);
     margin: 50px auto 80px auto;
     display: flex;
     justify-content: space-between;
@@ -600,12 +616,12 @@ main {
 .d-6-cont {
     width: 100%;
     margin: 0;
-    padding: 80px 0 100px 0;
+    padding: 80px 0 80px 0;
     background-color: #262626;
 }
 .d-6 {
     margin: 0 auto;
-    width: clamp(320px, 80%, 1160px);
+    width: clamp(300px, 80%, 1160px);
 }
 .d-6 > h1 {
     letter-spacing: 1px;
@@ -616,7 +632,7 @@ main {
     flex-wrap: wrap;
     align-items: center;
     height: 50px;
-    width: clamp(320px, 80%, 500px);
+    width: clamp(300px, 80%, 500px);
 }
 .d-6-ul > li {
     font-size: 16px;
@@ -694,8 +710,8 @@ main {
 .d-6-m-i > img {
     width: 100%;
     height: 100%;
-    transform: scale(1.2);
-    transform-origin: 50% 50%;
+    /* transform: scale(1.1);
+    transform-origin: 50% 50%; */
 }
 .dim-act {
     visibility: visible;
@@ -711,7 +727,7 @@ footer {
     width: 100%;
 }
 .footer-cont {
-    width: clamp(320px, 80%, 1160px);
+    width: clamp(300px, 80%, 1160px);
     margin: 0 auto;
     padding: 100px 0;
     display: flex;
@@ -727,6 +743,7 @@ footer {
 .f-1 > p {
     line-height: 1.3;
     letter-spacing: 1px;
+    margin: 10px 0 10px 0;
 }
 .f-1 > p:last-of-type {
     margin-bottom: 30px;
@@ -832,7 +849,7 @@ footer {
         margin: 20px 0 0 0;
     }
     .d-3-2-m-c {
-        width: clamp(320px, 90%, 420px);
+        width: clamp(300px, 90%, 420px);
         margin: 10px 0;
     }
     .d-3-2-m-c-each-cont {
@@ -908,7 +925,7 @@ footer {
         background-image: url("./images/background2.jpg");
     }
     .d-1 {
-        width: clamp(320px, 90%, 1160px);
+        width: clamp(300px, 90%, 1160px);
         justify-content: flex-end;
     }
     .d-1-main {
@@ -944,7 +961,7 @@ footer {
         font-size: 20px;
     }
     .d-3-1 {
-        width: clamp(320px, 90%, 1160px);
+        width: clamp(300px, 90%, 1160px);
     }
     .d-3-1-m-i {
         position: relative;
@@ -957,7 +974,7 @@ footer {
         left: -30;
     }
     .d-3-2 {
-        width: clamp(320px, 90%, 1160px);
+        width: clamp(300px, 90%, 1160px);
     }
     .d-3-3 {
         width: 90%;
@@ -981,9 +998,16 @@ footer {
         width: 90%;
         margin: 60px auto;
     }
+    .d-6-m-i {
+        /* position: relative;
+        height: 300px; */
+    }
     .d-6-m-i > img {
-        transform: scale(1.3);
-        transform-origin: 70% 50%;
+        /* transform: scale(1.1);
+        transform-origin: 50% 50%; */
+        /* position: absolute;
+        top: 0;
+        left: 0; */
     }
     .d-6-m-dim {
         width: 70%;
@@ -1008,10 +1032,10 @@ footer {
     .d-3-2 {
         display: flex;
         flex-direction: column-reverse;
-        width: clamp(320px, 90%, 1160px);
+        width: clamp(300px, 90%, 1160px);
     }
     .d-3-2-i {
-        width: clamp(320px, 90%, 1160px);
+        width: clamp(300px, 90%, 1160px);
         margin: 0 auto;
     }
     .d-3-2-i-i {
@@ -1149,6 +1173,9 @@ footer {
     .d-5-2-m > h3 {
         font-size: 20px;
     }
+    .d-6-cont {
+        padding: 50px 0 50px 0;
+    }
 }
 @media (max-width: 430px) {
     .d-1-cont {
@@ -1166,7 +1193,7 @@ footer {
         line-height: 1.3;
         letter-spacing: 1px;
         text-align: left;
-        width: clamp(320px, 90%, 430px);
+        width: clamp(300px, 90%, 430px);
         margin: 40px auto 30px auto;
     }
     .d-3-1 {
@@ -1198,4 +1225,18 @@ footer {
         margin-bottom: 20px;
     }
     
+}
+@media (max-width: 400px) {
+    .h-cont {
+        justify-content: flex-end;
+    }
+    .h-i {
+        display: none;
+    }
+    .d-1-alt {
+        height: 320px;
+    }
+    .d-3-1-m-i-i {
+        left: 0;
+    }
 }

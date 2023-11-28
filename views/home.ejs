@@ -4,29 +4,32 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Josh Nguyen">
-        <meta name="keywords" content="hillhelicopters, hillhelicopter, hill-helicopters, hill-helicopter, helicopters, helicopter, heli, air">
-        <meta name="description" content="Hill Helicopters aims to disrupt the aviation market with a revolutionary new helicopter. Experience Jason Hill's vision of luxury, personal flight with Hill Helicopters' HX50. Pre Order yours now. Available worldwide. Features: 500 shp Horsepower, 700 nm Max Range.">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Hill Helicopters">
-        <meta property="og:description" content="Hill Helicopters aims to disrupt the aviation market with a revolutionary new helicopter. Experience Jason Hill's vision of luxury, personal flight with Hill Helicopters' HX50. Pre Order yours now. Available worldwide. Features: 500 shp Horsepower, 700 nm Max Range.">
-        <!-- Note to change this route -->
-        <!-- <meta property="og:image" content="https://joshnguyentoronto.com/images/profile_camp_3.png">
-        <meta property="og:url" content="https://joshnguyentoronto.com/">
+        <meta property="og:description" content="Jump to the front of the production line for your hill HX50 and get your HX50 as early as 2025">
+        <meta name="title" content="Jump the line for Hills helicopter">
+        <meta name="description" content="Jump to the front of the production line for your hill HX50 and get your HX50 as early as 2025">
+        <meta name="keywords" content="hx50, hill, hills, heli, hc50, hillhelicopters, hillhelicopter, hill-helicopters, hill-helicopter, helicopters, helicopter, air">
+        <meta name="robots" content="index, follow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="2 days">
+        <meta name="author" content="Web Build Service">
         <meta property="og:locale" content="en_CA">
-        <meta property="og:site_name" content="joshnguyentoronto.com">
-        <meta property="og:image:width" content="600">
-        <meta property="og:image:height" content="479">
-        <meta property="og:image:type" content="image/png">
+        <meta property="og:site_name" content="jump the line HX50">
+        <meta property="og:url" content="https://jumpthelinehillhelicopters.com/">
+        <meta property="og:image" content="https://jumpthelinehillhelicopters.com/images/background1.jpg">
+        <meta property="og:image:width" content="739">
+        <meta property="og:image:height" content="628">
+        <meta property="og:image:type" content="image/jpg">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@big_boys_with_cool_toys">
-        <meta name="twitter:title" content="">
-        <meta name="twitter:description" content="View Josh's personal portfolio website where you can find Josh's information, background, skills, resume, Josh's projects, and more.">
-        <meta name="twitter:image" content="https://joshnguyentoronto.com/images/profile_camp_3.png">
-        <meta name="twitter:url" content="https://joshnguyentoronto.com/"> -->
-        <title>Luxury Private Helicopter - HILL HELICOPTERS</title>
-        <!-- <link rel="canonical" href="https://joshnguyentoronto.com/"> -->
-        <!-- <link rel="icon" href="../images/hilheli-icon.png"> -->
+        <meta name="twitter:title" content="Jump the production line and order your HX50 helicopter today">
+        <meta name="twitter:description" content="Why order directly and wait till 2026 to get your HX50, when you can jump the line and get it as early as 2025.">
+        <meta name="twitter:image" content="https://jumpthelinehillhelicopters.com/images/twitter-img.jpg">
+        <meta name="twitter:url" content="https://jumpthelinehillhelicopters.com/">
+        <link rel="icon" href="../images/hill-logo-small.png">
+        <title>Luxury Private Helicopter HX50</title>
         <link rel="stylesheet" href="./home.css">
         <script defer src="../home.js"></script>
     </head>
@@ -109,7 +112,7 @@
                             <img class="d-3-1-m-i-i" id="paint-img" src="./images/outside_1_1.png" alt="helicopter image">
                         </div>
                         <div class="d-3-1-m-c">
-                            <button class="d-3-1-m-c-div" id="d-3-1-m-c-div-active" onclick="changePaint(id)" id="ext-1">
+                            <button class="d-3-1-m-c-div d-3-1-m-c-div-active" onclick="changePaint(id)" id="ext-1">
                                 <div class="d-3-1-m-c-1"></div>&nbsp;&nbsp;&nbsp;<p>Supermarine white</p>
                             </button>
                             <button class="d-3-1-m-c-div" onclick="changePaint(id)" id="ext-2">
@@ -140,14 +143,14 @@
                             <img id="int-img-main" src="./images/interior_1_1.jpg" alt="helicopter interior main image">
                         </div>
                         <div class="d-3-2-i-o">
-                            <div class="d-3-2-i-o-e">
-                                <img id="int-img-1" onclick="changeInt(src)" src="./images/interior_1_1.jpg" alt="helicopter interior selection image">
+                            <div class="d-3-2-i-o-e d-3-2-i-o-e-active">
+                                <img id="int-img-1" onclick="changeInt(src); changeIntActive(id)" src="./images/interior_1_1.jpg" alt="helicopter interior selection image">
                             </div>
                             <div class="d-3-2-i-o-e">
-                                <img id="int-img-2" onclick="changeInt(src)" src="./images/interior_1_2.jpg" alt="helicopter interior selection image">
+                                <img id="int-img-2" onclick="changeInt(src); changeIntActive(id)" src="./images/interior_1_2.jpg" alt="helicopter interior selection image">
                             </div>
                             <div class="d-3-2-i-o-e">
-                                <img id="int-img-3" onclick="changeInt(src)" src="./images/interior_1_3.jpg" alt="helicopter interior selection image">
+                                <img id="int-img-3" onclick="changeInt(src); changeIntActive(id)" src="./images/interior_1_3.jpg" alt="helicopter interior selection image">
                             </div>
                         </div>
                     </div>
@@ -156,7 +159,7 @@
                         <p>Experience unparalleled luxury with our exclusive interior customization offer. From opulent leather seats to a choice of fine wood finishes, each detail is tailored to your taste.</p>
                         <p id="color-name">Color: Sky white</p>
                         <div class="d-3-2-m-c">
-                            <div class="d-3-2-m-c-each-cont"><div id="int-color-1" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-1"></div></div>
+                            <div class="d-3-2-m-c-each-cont d-3-2-m-c-each-cont-active"><div id="int-color-1" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-1"></div></div>
                             <div class="d-3-2-m-c-each-cont"><div id="int-color-2" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-2"></div></div>
                             <div class="d-3-2-m-c-each-cont"><div id="int-color-3" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-3"></div></div>
                             <div class="d-3-2-m-c-each-cont"><div id="int-color-4" onclick="changeIntColor(id)" class="d-3-2-m-c-each d-3-2-m-c-4"></div></div>
@@ -190,7 +193,7 @@
             <div class="d-4-cont">
                 <div class="d-4">
                     <div class="d-4-v">
-                        <iframe src="https://www.youtube.com/embed/gLHO7ciJSWI?start=0&autoplay=0&loop=1&mute=1&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&fs=0&color=white" width="" height="0" frameborder="0"></iframe>
+                        <iframe id="d-4-v-video" src="https://www.youtube.com/embed/gLHO7ciJSWI?start=0&loop=1&mute=1&modestbranding=1&rel=0&iv_load_policy=3&disablekb=1&fs=0&color=white" width="" height="0" allow="autoplay" frameborder="0" title='YouTube video player'></iframe>
                     </div>
                     <div class="d-4-m">
                         <h2>Unveiling the creation process</h2>
@@ -204,7 +207,7 @@
                 <h1>Hill HX50 makes flying easier and safer than ever</h1>
                 <div class="d-5-2">
                     <div class="d-5-2-m">
-                        <h3>The Hill Digital Cockpit (HDC)</h>
+                        <h3>The Hill Digital Cockpit (HDC)</h3>
                         <p>HDC makes owning and operating a helicopter as simple, convenient, and intuitive as driving a car, resulting in helicopter flying and ownership that is more engaging, accessible, and safer than ever.</p>
                         <p>With full integration of iPad-based navigation and flight planning apps, intelligent, context-sensitive support, and a clear graphical display of flight information only when needed, it delivers new levels of simplicity and profound workload reduction.</p>
                     </div>
@@ -445,8 +448,8 @@
                 </div>
                 <div class="f-1">
                     <h3>Secure your place in production line!</h3>
-                    <p>+1 (647) 321 - 1965</p>
-                    <p>Alextheskipro@hotmail.com</p>
+                    <p>+1 (416) 992 - 7298</p>
+                    <p>jumpthelinehillhelicopters@gmail.com</p>
                     <a href="/contact">Get in touch&nbsp;&#8680;</a>
                 </div>
             </div>

@@ -1,98 +1,128 @@
 const paint = document.getElementById("paint-img")
-
 function changePaint(id) {
+    document.getElementsByClassName("d-3-1-m-c-div-active")[0].classList.remove("d-3-1-m-c-div-active")
     if (id == "ext-1") {
         paint.src="./images/outside_1_1.png"
+        document.getElementById(id).classList.add("d-3-1-m-c-div-active")
     } else if (id == "ext-2") {
         paint.src="./images/outside_1_2.png"
+        document.getElementById(id).classList.add("d-3-1-m-c-div-active")
     } else if (id == "ext-3") {
         paint.src="./images/outside_1_3.png"
+        document.getElementById(id).classList.add("d-3-1-m-c-div-active")
     } else if (id == "ext-4") {
         paint.src="./images/outside_1_4.png"
+        document.getElementById(id).classList.add("d-3-1-m-c-div-active")
     } else if (id == "ext-5") {
         paint.src="./images/outside_1_5.png"
+        document.getElementById(id).classList.add("d-3-1-m-c-div-active")
     } else if (id == "ext-6") {
         paint.src="./images/outside_1_6.png"
+        document.getElementById(id).classList.add("d-3-1-m-c-div-active")
     } else if (id == "ext-7") {
         paint.src="./images/outside_1_7.png"
+        document.getElementById(id).classList.add("d-3-1-m-c-div-active")
     }
 }
-
 
 function changeInt(src) {
     document.getElementById("int-img-main").src = src
 }
 
-let activeIntColor = 'sky'
+const intActive = document.getElementsByClassName("d-3-2-i-o-e")
 
+function changeIntActive(id) {
+    document.getElementsByClassName("d-3-2-i-o-e-active")[0].classList.remove("d-3-2-i-o-e-active")
+    if (id == "int-img-1") {
+        intActive[0].classList.add("d-3-2-i-o-e-active")
+    } else if (id == "int-img-2") {
+        intActive[1].classList.add("d-3-2-i-o-e-active")
+    } else if (id == "int-img-3") {
+        intActive[2].classList.add("d-3-2-i-o-e-active")
+    }
+}
+
+const colorSquare = document.getElementsByClassName("d-3-2-m-c-each-cont")
+let activeIntColor = 'sky'
 function changeIntColor(id) {
+    document.getElementsByClassName("d-3-2-m-c-each-cont-active")[0].classList.remove("d-3-2-m-c-each-cont-active")
     if (id == "int-color-1") {
         activeIntColor = 'sky'
         document.getElementById("int-img-main").src="./images/interior_1_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_1_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_1_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_1_3.jpg"
+        colorSquare[0].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-2") {
         activeIntColor = "silk"
         document.getElementById("int-img-main").src="./images/interior_2_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_2_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_2_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_2_3.jpg"
+        colorSquare[1].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-3") {
         activeIntColor = "satin"
         document.getElementById("int-img-main").src="./images/interior_3_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_3_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_3_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_3_3.jpg"
+        colorSquare[2].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-4") {
         activeIntColor = "alpine"
         document.getElementById("int-img-main").src="./images/interior_4_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_4_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_4_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_4_3.jpg"
+        colorSquare[3].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-5") {
         activeIntColor = "mocha"
         document.getElementById("int-img-main").src="./images/interior_5_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_5_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_5_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_5_3.jpg"
+        colorSquare[4].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-6") {
         activeIntColor = "autumn"
         document.getElementById("int-img-main").src="./images/interior_6_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_6_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_6_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_6_3.jpg"
+        colorSquare[5].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-7") {
         activeIntColor = "cherry"
         document.getElementById("int-img-main").src="./images/interior_7_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_7_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_7_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_7_3.jpg"
+        colorSquare[6].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-8") {
         activeIntColor = "walnut"
         document.getElementById("int-img-main").src="./images/interior_8_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_8_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_8_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_8_3.jpg"
+        colorSquare[7].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-9") {
         activeIntColor = "blue"
         document.getElementById("int-img-main").src="./images/interior_9_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_9_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_9_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_9_3.jpg"
+        colorSquare[8].classList.add("d-3-2-m-c-each-cont-active")
     } else if (id == "int-color-10") {
         activeIntColor = "emerald"
         document.getElementById("int-img-main").src="./images/interior_10_1.jpg"
         document.getElementById("int-img-1").src="./images/interior_10_1.jpg"
         document.getElementById("int-img-2").src="./images/interior_10_2.jpg"
         document.getElementById("int-img-3").src="./images/interior_10_3.jpg"
+        colorSquare[9].classList.add("d-3-2-m-c-each-cont-active")
     }
+    document.getElementsByClassName("d-3-2-i-o-e-active")[0].classList.remove("d-3-2-i-o-e-active")
+    intActive[0].classList.add("d-3-2-i-o-e-active")
 }
-
 
 let colors = document.querySelectorAll(".d-3-2-m-c-each")
 let colorText = document.getElementById("color-name")
-
 colors.forEach(ele => {
     ele.addEventListener('mouseover', event => {
         if (event.target.id == 'int-color-1') {
@@ -118,7 +148,6 @@ colors.forEach(ele => {
         }
     })
 })
-
 colors.forEach(ele => {
     ele.addEventListener('mouseout', event => {
         if (activeIntColor == 'sky') {
@@ -145,6 +174,29 @@ colors.forEach(ele => {
     })
 })
 
+
+
+
+const video = document.getElementById("d-4-v-video")
+
+function isInViewport(video) {
+    let bounding = video.getBoundingClientRect();
+    let height = window.innerHeight
+    if (bounding.bottom <= height) {
+        return true
+    } else {
+        return false
+    }
+}
+
+let canPlayVid = true
+
+window.addEventListener('scroll', function (event) {
+    if (isInViewport(video) & canPlayVid) {
+        video.src += "&autoplay=1"
+        canPlayVid = false
+    }
+}, false);
 
 
 function changeDimmension(id) {
@@ -177,5 +229,7 @@ function changeDimmension(id) {
         cur.classList.add("dim-act")
         cur.classList.remove("dim-int")
     }
+    document.getElementsByClassName("d-6-active")[0].classList.remove("d-6-active")
+    document.getElementById(id).classList.add("d-6-active")
 }
 
