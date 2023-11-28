@@ -221,7 +221,7 @@ main {
 }
 .d-2 > a {
     font-size: 20px;
-    background-color: #11DD72;
+    background-color: #00ca62;
     color: #000000;
     border-radius: 5px;
     padding: 10px 12px;
@@ -235,11 +235,12 @@ main {
 }
 .d-3 > h1 {
     text-align: center;
+    letter-spacing: 1px;
     margin: 70px 0 60px 0;
 }
 .d-3-1 {
     width: clamp(300px, 80%, 1160px);
-    margin: 20px auto 100px auto;
+    margin: 20px auto 80px auto;
 }
 .d-3-1-h3 {
     margin: 20px 0 60px 10px;
@@ -275,13 +276,15 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
 }
 #d-3-1-m-c-div-active {
     border: 2px #0D9F53 solid;
 }
 .d-3-1-m-c-div > p {
     font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    text-align: left;
 }
 .d-3-1-m-c-div:hover  {
     border: 2px #4e4e4e solid;
@@ -290,8 +293,9 @@ main {
     display: inline;
     width: 40px;
     height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     border-radius: 3px;
-    padding: 10px;
     background-color: #F2F3FF;
 }
 .d-3-1-m-c-2 {
@@ -346,7 +350,7 @@ main {
     display: flex;
     justify-content: space-between;
     width: clamp(300px, 80%, 1160px);
-    margin: 0 auto 100px auto;
+    margin: 0 auto 80px auto;
 }
 .d-3-2-i {
     width: 49%;
@@ -453,7 +457,7 @@ main {
 }
 .d-3-3 {
     width: clamp(300px, 80%, 1160px);
-    margin: 0 auto 100px auto;
+    margin: 0 auto 80px auto;
 }
 .d-3-3 > h3 {
     text-align: center;
@@ -474,6 +478,7 @@ main {
     border-radius: 5px;
 }
 .d-3-3-m-e-title {
+    margin: 8px 0 0 0;
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -575,12 +580,14 @@ main {
     width: 48%;
 }
 .d-5-2-m > h3 {
-    margin: 10px 0 0 0;
+    margin: 10px 0 10px 0;
     line-height: 1.3;
     letter-spacing: 1px;
 }
 .d-5-2-m > p {
-    line-height: 1.4;
+    color: rgb(206, 206, 206);
+    margin: 10px 0;
+    line-height: 1.5;
     letter-spacing: 1px;
     font-weight: 400;
 }
@@ -606,10 +613,10 @@ main {
 }
 .d-6-ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    width: 480px;
     height: 50px;
+    width: clamp(320px, 80%, 500px);
 }
 .d-6-ul > li {
     font-size: 16px;
@@ -617,9 +624,7 @@ main {
     letter-spacing: 1px;
     height: 50px;
     text-align: center;
-    /* display: flex;
-    justify-content: flex-start;
-    align-items: center; */
+    margin: 0 10px;
 }
 .d-6-ul > li:hover {
     color: #0D9F53;
@@ -738,6 +743,31 @@ footer {
 .f-1 > a:hover {
     border: 1px black solid;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1200px) {
     .d-3-1-m {
         display: block;
@@ -752,7 +782,7 @@ footer {
     }
     .d-3-1-m-c-div {
         width: 240px;
-        margin: 10px 0;
+        margin: 10px auto;
     }
     .d-3-1-m-i-i {
         margin: 0;
@@ -791,6 +821,27 @@ footer {
     }
 }
 @media (max-width: 1000px) {
+    .d-3-2-m {
+        width: 49%;
+    }
+    .d-3-2-m > p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    #color-name {
+        margin: 20px 0 0 0;
+    }
+    .d-3-2-m-c {
+        width: clamp(320px, 90%, 420px);
+        margin: 10px 0;
+    }
+    .d-3-2-m-c-each-cont {
+        width: 45px;
+        height: 45px;
+    }
+    .d-4-cont {
+        padding: 50px 0;
+    }
     .d-4 {
         display: flex;
         flex-direction: column-reverse;
@@ -814,7 +865,7 @@ footer {
     }
     .d-5 > h1 {
         font-size: 32px;
-        margin: 100px 20px 0 20px;
+        margin: 50px 20px 0 20px;
     }
     .d-5-2-m > h3 {
         font-size: 24px;
@@ -824,24 +875,6 @@ footer {
     }
     .f-1 {
         width: 47%;
-    }
-    .d-3-2-m {
-        width: 49%;
-    }
-    .d-3-2-m > p {
-        font-size: 18px;
-        line-height: 1.4;
-    }
-    #color-name {
-        margin: 20px 0 0 0;
-    }
-    .d-3-2-m-c {
-        width: clamp(320px, 90%, 420px);
-        margin: 10px 0;
-    }
-    .d-3-2-m-c-each-cont {
-        width: 45px;
-        height: 45px;
     }
 }
 @media (max-width: 800px) {
@@ -896,10 +929,10 @@ footer {
         height: 80px;
     }
     .d-1-stat-e > h5 {
-        font-size: 16px;
+        font-size: 18px;
     }
     .d-1-stat-e > p {
-        font-size: 12px;
+        font-size: 16px;
     }
     .d-2 {
         padding: 20px 0 50px 0;
@@ -910,9 +943,21 @@ footer {
         line-height: 130%;
         font-size: 20px;
     }
+    .d-3-1 {
+        width: clamp(320px, 90%, 1160px);
+    }
+    .d-3-1-m-i {
+        position: relative;
+        aspect-ratio: 2 / 1;
+    }
     .d-3-1-m-i-i {
-        width: 120%;
-        margin-left: -50px;
+        width: 100%;
+        position: absolute;
+        top: 10;
+        left: -30;
+    }
+    .d-3-2 {
+        width: clamp(320px, 90%, 1160px);
     }
     .d-3-3 {
         width: 90%;
@@ -963,10 +1008,10 @@ footer {
     .d-3-2 {
         display: flex;
         flex-direction: column-reverse;
-        width: clamp(300px, 90%, 1160px);
+        width: clamp(320px, 90%, 1160px);
     }
     .d-3-2-i {
-        width: clamp(300px, 80%, 1160px);
+        width: clamp(320px, 90%, 1160px);
         margin: 0 auto;
     }
     .d-3-2-i-i {
@@ -1000,37 +1045,85 @@ footer {
         height: 900px;
     }
     .d-1-alt {
-        height: 190px;
+        height: 240px;
     }
     .d-1-alt-main > h1 {
         font-size: 30px;
     }
     .d-1-alt-main > p {
-        font-size: 16px;
+        font-size: 18px;
+        line-height: 1.4;
     }
     .d-2 {
         padding: 20px 0 50px 0;
     }
     .d-2 > h4 {
         margin: 20px 0;
-        line-height: 130%;
-        font-size: 16px;
+        line-height: 1.4;
+        font-size: 18px;
     }
     .d-2 > a {
-        font-size: 16px;
+        font-size: 18px;
         border-radius: 5px;
         padding: 5px 10px;
     }
+    .d-3-1 {
+        margin: 20px auto 50px auto;
+    }
+    .d-3-2 {
+        margin: 0 auto 50px auto;
+    }
+    .d-3-3 {
+        margin: 0 auto 50px auto;
+    }
+    .d-3-3 > h3 {
+        margin: 0 0 20px 0;
+    }
     .d-3-1-m-c {
         margin: 30px 0 0 0;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: center;
+        align-items: center; */
+    }
+    .d-3-1-m-c-div {
+        width: 180px;
+        margin: 10px auto;
+        padding: 15px 0px 15px 15px ;
+    }
+    .d-3-1-m-c-1 {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        min-height: 40px;
+        margin-left: 0;
+    }
+    .d-3-1-m-c-div > p {
+        letter-spacing: 0px;
     }
     .d-3-1-m-i-i {
-        width: 110%;
-        margin-left: -30px;
+        width: 100%;
+        bottom: 0;
+        left: -10px;
+    }
+    .d-3-2-i {
+        width: 100%;
+    }
+    .d-3-2-i-i {
+        margin-bottom: 15px;
+    } 
+    .d-3-2-m {
+        width: 100%;
+    }
+    #color-name {
+        margin: 20px 0 0 0;
+    }
+    .d-3-2-m-c {
+        margin: 10px 0 20px 0;
+    }
+    .d-3-2-m-c-each-cont {
+        width: 50px;
+        height: 50px;
     }
     .d-4-m > h2 {
         font-size: 28px;
@@ -1056,26 +1149,53 @@ footer {
     .d-5-2-m > h3 {
         font-size: 20px;
     }
-    .d-3-2-i {
-        width: clamp(300px, 90%, 1160px);
-    }
-    .d-3-2-i-i {
-        margin-bottom: 15px;
-    } 
-    .d-3-2-m {
-        width: 100%;
-    }
-    #color-name {
-        margin: 20px 0 0 0;
-    }
-    .d-3-2-m-c {
-        margin: 10px 0 20px 0;
-    }
-    .d-3-2-m-c-each-cont {
-        width: 50px;
-        height: 50px;
-    }
 }
 @media (max-width: 430px) {
-
+    .d-1-cont {
+        height: 550px;
+        background-image: url("./images/background2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+    }
+    .d-1-stat {
+        display: none;
+    }
+    .d-3 > h1 {
+        font-size: 30px;
+        line-height: 1.3;
+        letter-spacing: 1px;
+        text-align: left;
+        width: clamp(320px, 90%, 430px);
+        margin: 40px auto 30px auto;
+    }
+    .d-3-1 {
+        margin: 20px auto 50px auto;
+    }
+    .d-3-2 {
+        margin: 0 auto 50px auto;
+    }
+    .d-3-3 {
+        margin: 0 auto 50px auto;
+    }
+    .d-3-1-h3 {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-align: left;
+        margin: 20px 0 50px 0;
+    }
+    .d-3-2-m > h3 {
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+    .d-3-2-m > p {
+        line-height: 1.5;
+    }
+    .d-6-ul {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
 }
