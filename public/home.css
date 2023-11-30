@@ -255,7 +255,7 @@ main {
 .d-3 {
   width: 100%;
 }
-.d-3 > h1 {
+.d-3 > h2 {
   text-align: center;
   letter-spacing: 1px;
   margin: 70px 0 60px 0;
@@ -590,7 +590,7 @@ main {
   margin: 0;
   width: 100%;
 }
-.d-5 > h1 {
+.d-5 > h2 {
   text-align: center;
   margin: 100px 0 0 0;
 }
@@ -647,7 +647,7 @@ main {
   margin: 0 auto;
   width: clamp(300px, 90%, 1160px);
 }
-.d-6 > h1 {
+.d-6 > h2 {
   letter-spacing: 1px;
   margin: 20px 0 30px 0;
 }
@@ -801,6 +801,31 @@ footer {
 .credential-link:hover {
   color: #11dd72;
 }
+.d-7-cont {
+  width: 100%;
+}
+.d-7 {
+  width: clamp(300px, 90%, 1160px);
+  margin: 70px auto;
+  border: 2px rgb(199, 0, 0) solid;
+  padding: 20px;
+}
+.d-7 > h3 {
+  letter-spacing: 1px;
+}
+.d-7 > h3 > svg {
+  margin-top: auto;
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+}
+.d-7 > p {
+  letter-spacing: 1px;
+  margin: 20px 0;
+  line-height: 1.4;
+  font-size: 16px;
+  color: rgb(234, 234, 234);
+}
 @media (max-width: 1200px) {
   .d-3-1-m {
     display: block;
@@ -896,7 +921,7 @@ footer {
   .d-5-2-i {
     width: 80%;
   }
-  .d-5 > h1 {
+  .d-5 > h2 {
     font-size: 32px;
     margin: 50px 20px 0 20px;
   }
@@ -947,7 +972,7 @@ footer {
   .d-1-main {
     display: none;
   }
-  .d-1-main > h1 {
+  .d-1-main > h2 {
     line-height: 40px;
     font-size: 32px;
   }
@@ -1183,7 +1208,7 @@ footer {
   .d-5-2-i {
     width: 100%;
   }
-  .d-5 > h1 {
+  .d-5 > h2 {
     font-size: 28px;
   }
   .d-5-2-m > h3 {
@@ -1191,6 +1216,18 @@ footer {
   }
   .d-6-cont {
     padding: 50px 0 50px 0;
+  }
+  .d-7 {
+    margin: 50px auto;
+    border: 1px rgb(199, 0, 0) solid;
+    padding: 10px;
+  }
+  .d-7 > h3 {
+    font-size: 18px;
+  }
+  .d-7 > p {
+    font-size: 12px;
+    line-height: 1.5;
   }
 }
 @media (max-width: 430px) {
@@ -1204,7 +1241,7 @@ footer {
   .d-1-stat {
     display: none;
   }
-  .d-3 > h1 {
+  .d-3 > h2 {
     font-size: 30px;
     line-height: 1.3;
     letter-spacing: 1px;

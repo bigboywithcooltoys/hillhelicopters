@@ -307,6 +307,31 @@ footer {
 .f-1 > a:hover {
   border: 1px black solid;
 }
+.d-7-cont {
+  width: 100%;
+}
+.d-7 {
+  width: clamp(300px, 90%, 1160px);
+  margin: 70px auto;
+  border: 2px rgb(199, 0, 0) solid;
+  padding: 20px;
+}
+.d-7 > h3 {
+  letter-spacing: 1px;
+}
+.d-7 > h3 > svg {
+  margin-top: auto;
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+}
+.d-7 > p {
+  letter-spacing: 1px;
+  margin: 20px 0;
+  line-height: 1.4;
+  font-size: 16px;
+  color: rgb(234, 234, 234);
+}
 .credential {
   font-size: 16px;
   color: #666666;
@@ -381,6 +406,18 @@ footer {
   }
   .g-1-m-t-title {
     font-size: 18px;
+  }
+  .d-7 {
+    margin: 50px auto;
+    border: 1px rgb(199, 0, 0) solid;
+    padding: 10px;
+  }
+  .d-7 > h3 {
+    font-size: 18px;
+  }
+  .d-7 > p {
+    font-size: 12px;
+    line-height: 1.5;
   }
 }
 @media (max-width: 430px) {
