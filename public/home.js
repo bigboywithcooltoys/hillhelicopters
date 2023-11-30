@@ -199,6 +199,28 @@ window.addEventListener('scroll', function (event) {
 }, false);
 
 
+const video2 = document.getElementById("d-8-v-video")
+
+function isInViewport(video2) {
+    let bounding = video2.getBoundingClientRect();
+    let height = window.innerHeight
+    if (bounding.bottom <= height) {
+        return true
+    } else {
+        return false
+    }
+}
+
+let canPlayVid2 = true
+
+window.addEventListener('scroll', function (event) {
+    if (isInViewport(video2) & canPlayVid2) {
+        video2.src += "&autoplay=1"
+        canPlayVid2 = false
+    }
+}, false);
+
+
 function changeDimmension(id) {
     document.getElementById("dim-img").src = "./images/" + id + ".png"
     let prev = document.getElementsByClassName("dim-act")[0]

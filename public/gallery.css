@@ -307,6 +307,13 @@ footer {
 .f-1 > a:hover {
   border: 1px black solid;
 }
+.f-1-a {
+  text-decoration: none;
+}
+.f-1-a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .d-7-cont {
   width: 100%;
 }
@@ -416,7 +423,7 @@ footer {
     font-size: 18px;
   }
   .d-7 > p {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 1.5;
   }
 }
