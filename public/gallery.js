@@ -53,6 +53,60 @@ let videos = [
     "https://www.youtube.com/embed/P98sft1zjOo?autoplay=1&start=0&modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3", // eps-35
 ]
 
+let vidTitle = [
+    "Why build the HX50 ?",
+    "How is the HX50 the world's first truly private helicopter ?",
+    "HX50 - Behind the Design",
+    "How does my iPad integrate with the digital cockpit?",
+    "How does the HX50 compare with other popular light helicopters?",
+    "What is the seat and luggage capacity of the HX50?",
+    "What is the engine of the HX50 and its specs?",
+    "Advantages of doing 51% of the HX50 build",
+    "How is the HX50 so affordable?",
+    "What is the team behind the HX50?",
+    "What makes the HX50 so fast?",
+    "What maintenance costs should I expect on my HX50?",
+    "Does the HX50 have a set lifespan or hourly overhaul limit?",
+    "What colours are available and how much can I customise my HX50?",
+    "Can we expect a certified version of the HX50?",
+    "Why build HX50's own digital cockpit?",
+    "Journey to HX50 | Episode 1: Meet the Protagonists",
+    "Journey to HX50 | Episode 2: In Conversation with Peter Wilson",
+    "Journey to HX50 | Episode 3: In Conversation with Steve Brooks",
+    "Journey to HX50 | Episode 4: Why are composites key to the HX50?",
+    "Journey to HX50 | Episode 5: Making gears for the HX50",
+    "Journey to HX50 | Episode 6: Why build a 1/3 scale model HX50?",
+    "Journey to HX50 | Episode 7: Materials testing up close",
+    "Journey to HX50 | Episode 8: CNC machines installed and ready to go",
+    "Journey to HX50 | Episode 9: Big News thanks to Composite Integration",
+    "Journey to HX50 | Episode 10: Crashworthiness tests for HX50 seats",
+    "Journey to HX50 | Episode 11: Testing torque values for Helimove",
+    "Journey to HX50 | Episode 12: The complex process of gear-making",
+    "Journey to HX50 | Episode 13: Hill expands its workspace, adding 2 new facilities",
+    "Journey to HX50 | Episode 14: High performance engine demands high grade materials",
+    "Journey to HX50 | Episode 15: CMM in place to provide vital calibrations of HX50 components",
+    "Journey to HX50 | Episode 16: Finding the right machine to make parts for the engine",
+    "Journey to HX50 | Episode 17: Find out how gears are tested for precision",
+    "Journey to HX50 | Episode 18: Industrial Metamorphosis",
+    "Journey to HX50 | Episode 19: HX50 on track with chasing microns and hitting tolerances",
+    "Journey to HX50 | Episode 20: From empty warehouse to full scale HX50 airframe",
+    "Journey to HX50 | Episode 21: Vertical Integration and the HX50",
+    "Journey to HX50 | Episode 22: It's all in the details",
+    "Journey to HX50 | Episode 23: Our third airframe revealed",
+    "Journey to HX50 | Episode 24: Achieving perfection on the HX50 main rotor gearbox",
+    "Journey to HX50 | Episode 25: Carbon fibre revolutionises light helicopter design",
+    "Journey to HX50 | Episode 26: Airframe 4 - The next big stage in development",
+    "Journey to HX50 | Episode 27: Heat Treating and Shot Peening for Durable Gears",
+    "Journey to HX50 | Episode 28: Unboxing Our New Hexagon Leitz CMM Machine",
+    "Journey to HX50 | Episode 29: Unveiling the tailboom",
+    "Journey to HX50 | Episode 30: HX50 Doors: Where Ergonomics Meet Luxury",
+    "Journey to HX50 | Episode 31: Building HX50's Strength",
+    "Journey to HX50 | Episode 32: Elevating Efficiency - Inside the HX50 Power System",
+    "Journey to HX50 | Episode 33: Casting vs. Machining",
+    "Journey to HX50 | Episode 34: Building the Main Rotor System",
+    "Journey to HX50 | Episode 35: Revolutionising Gear Production",
+];
+
 let vidIndex = [
     'vid-1',
     'vid-2',
@@ -156,6 +210,7 @@ function playVid(e) {
     document.getElementById("g-1-toggle").classList.add("g-1-active")
     document.getElementById("g-1-m-toggle").classList.add("g-1-m-active")
     document.getElementById("g-2-toggle").classList.add("g-2-active")
+    document.getElementById("g-1-m-t-title-text").textContent = vidTitle[i];
 }
 
 function hoverVid(e) {
