@@ -749,6 +749,7 @@ main {
 footer {
   background-color: rgb(15, 15, 15);
   width: 100%;
+  padding: 0 0 10px 0;
 }
 .footer-cont {
   width: clamp(300px, 90%, 1160px);
@@ -784,6 +785,21 @@ footer {
 }
 .f-1 > a:hover {
   border: 1px black solid;
+}
+.credential {
+  font-size: 16px;
+  color: #666666;
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+}
+.credential-link {
+  font-size: 16px;
+  color: #07723b;
+  text-decoration: none;
+}
+.credential-link:hover {
+  color: #11dd72;
 }
 @media (max-width: 1200px) {
   .d-3-1-m {
