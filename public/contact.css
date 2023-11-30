@@ -267,6 +267,9 @@ main {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
+.c-1-sub-card > h3 > svg {
+  margin: 0 10px -10px 0;
+}
 .c-1-sub-card-whatsapp {
   margin: 20px 0;
   display: flex;
